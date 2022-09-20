@@ -1,0 +1,325 @@
+html, body {
+    /* margin: 0; */
+    height: 100%;
+    width: 100%;
+}
+
+#newEntry-background {
+    height: fit-content;
+    min-height: 90%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/barrels.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-background {
+    height: fit-content;
+    height: calc(100% - 82px);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/whisky_map.png);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#journal-background {
+    width: 100%;
+    height:fit-content;
+    height: calc(100%);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/whisky_taste.jpg);
+    background-attachment:fixed;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    /* font-size: larger; */
+}
+
+#journalbackground-scheme {
+    background-color: white;
+    padding-top: 5%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: .95;
+    height: 650px;
+    }
+
+#entries {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-image: url(../images/legalpad.jpg);
+    font-family: 'Special Elite', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#new-entry-row {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+#dropdown-group {
+    width: 70%;
+}
+
+#dropdown-button {display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+
+select {
+    color:#fff;
+    background-color:#007bff;
+    border-color:#007bff
+}
+
+.navbar {
+    height: 80;
+}
+
+#new-journal-btn {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+#login-background, #register-background {
+    height: calc(100% - 82px);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/ardbeg.jpeg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+}
+
+#signin-container {
+    align-self: center;
+    justify-self: center;
+}
+
+#journal {
+    border: solid black 1px;
+    border-radius:1.9%;
+    padding: 3px;
+}
+
+#signin-message {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 3%;
+    border: #343a40;
+    border-style: solid;
+    border-width: 1px;
+    align-self: center;
+}
+
+#register-message, #login-message {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1%;
+    border: #343a40;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#welcome-message {
+    background-color: #f8f9fa;
+    padding: 1%;
+    border: #343a40;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.form-signin, .form-register {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-control, .form-register .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.form-signin .form-control:focus, .form-register .form-control:focus {
+    z-index: 2;
+}
+  
+.form-signin input[type="username"], .form-register input[type="username"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.form-signin input[type="password"], .form-register input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#distilleryList {
+    width: 250px;
+    height: 50px;
+}
+
+#expressionList {
+    width: 400px;
+    height: 50px;
+}
+
+#logout:hover {
+    color: white;
+}
+
+#whisky-list {
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
+
+#journal-title {
+    margin-bottom: 45px;
+}
+
+#erase-button {
+    width: 200px;
+    height: 40px;
+}
+
+#erase-entry{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1rem;
+    color: red;
+}
+
+.mainCon {
+    font-family: 'Special Elite', cursive;
+}
+
+.notes {
+    font-size: 13px;
+    font-family: 'Special Elite', cursive;
+}
+
+#flavorWheelDisplay {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    /* margin-left: 25%; */
+}
+
+#whisky-wheel {
+    background-color: white;
+    border: dashed 1px black;
+    margin: auto;
+}
+
+#myChart {
+    background-color: white;
+}
+
+#brand {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1340px) {
+    
+    #entries {
+        margin: auto;
+        background-position: 20%;
+    }
+
+    #flavorWheelDisplay {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mychart {
+        width: 100%;
+        height: 500%;
+    }
+    
+    #journal-background {
+    height: calc(100% + 20px);
+    }
+
+    .Notes {
+        font-size: medium;
+    }
+    
+}
+@media screen and (max-width: 660px) {
+    
+    #entries {
+        margin: auto;
+        background-position: 20%;
+    }
+
+    #flavorWheelDisplay {
+        width: 100%;
+        height: 110%;
+    }
+
+    #mychart {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #journal-background {
+    height: calc(100% + 20px);
+    }
+
+    #journalbackground-scehme {
+        height: 95%;
+    }
+
+    .Notes {
+        font-size: medium;
+    }
+    
+}

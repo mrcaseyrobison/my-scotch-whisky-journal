@@ -1,0 +1,17 @@
+{{!-- Login Form --}}
+<div id="login-background" class="align-items-center">
+  <div class="container text-center" id="login-container">
+    <form class="form-signin">
+      <h5 class="mb-3 font-weight-normal" id="signin-message">Sign in to access your journal</h5>
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+    {{!-- Link to registration form --}}
+    <a href="/register" id="register-message">Don't have an account? Register!</a>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>
